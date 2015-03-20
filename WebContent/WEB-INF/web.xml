@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  id="WebApp_ID" version="3.1">
+  <display-name>Markdown Publisher</display-name>
+  <context-param>
+    <param-name>mdpubHomeDir</param-name>
+    <param-value>/Users/maru/notes/</param-value>
+  </context-param>
+  <context-param>
+    <param-name>mdpubOutDir</param-name>
+    <param-value>${catalina.base}/webapps/ROOT/shelf/</param-value>
+  </context-param>
+  <context-param>
+    <param-name>bookshelfUrl</param-name>
+    <param-value>http://localhost:8080/shelf/</param-value>
+  </context-param>
+  <context-param>
+    <param-name>jacketFile</param-name>
+    <param-value>jacket.jpg</param-value>
+  </context-param>
+  <context-param>
+    <param-name>jslKey</param-name>
+    <param-value>jsl</param-value>
+  </context-param>
+  <context-param>
+    <param-name>jslTitle</param-name>
+    <param-value>JSL: 第2言語として始めるJava</param-value>
+  </context-param>
+  <context-param>
+    <param-name>jslSubDirs</param-name>
+    <param-value>js,css,img,fig</param-value>
+  </context-param>
+  <context-param>
+    <param-name>pullCommands</param-name>
+    <param-value>hg pull; hg up</param-value>
+  </context-param>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
